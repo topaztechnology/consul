@@ -1,0 +1,13 @@
+{
+  consul: "localhost:8500",
+  logging: {
+    level: "{{ .LOG_LEVEL | default "INFO" }}"
+  },
+  jobs: [
+    {
+      name: "consul",
+      exec: "/usr/local/bin/consul-start.sh",
+      restarts: "unlimited"
+    }
+  ]
+}

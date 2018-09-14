@@ -1,0 +1,11 @@
+{
+  "data_dir": "/consul/data",
+  "raft_protocol": 3,
+  "server": true,
+  "advertise_addr": "{{ GetInterfaceIP \"docker0\" }}",
+  "bind_addr": "0.0.0.0",
+  "client_addr": "0.0.0.0",
+  "disable_host_node_id": false,
+  "ui": true,
+  "retry_interval": "5s"
+}

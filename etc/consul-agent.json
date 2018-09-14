@@ -1,0 +1,12 @@
+{
+  "data_dir": "/consul/data",
+  "raft_protocol": 3,
+  "server": false,
+  "advertise_addr": "{{ GetInterfaceIP \"docker0\" }}",
+  "bind_addr": "0.0.0.0",
+  "retry_join": [
+    "consul"
+  ],
+  "retry_interval": "10s",
+  "rejoin_after_leave": true
+}
